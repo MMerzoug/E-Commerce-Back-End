@@ -1,3 +1,7 @@
+const Sequelize = require('sequelize');
+const sequelize = new Sequelize('./config/connection');
+
+
 // import models
 const Product = require('./Product');
 const Category = require('./Category');
@@ -6,31 +10,28 @@ const ProductTag = require('./ProductTag');
 
 // Products belongsTo Category
 Product.belongsTo(Category, {
-  through: {
-    model: ProductTag,
-    unique: false
-  },
+  foreignKey: 'category_id',
+  onDelete: 'CASCADE',
 });
+
 // Categories have many Products
 Category.hasMany(Product, {
-  through: {
-    model: ProductTag,
-    unique: false
-  },
+  foreignKey:'category_id'
 }),
-// Products belongToMany Tags (through ProductTag)
 
+// Products belongToMany Tags (through ProductTag)
 Product.belongsToMany(ProductTag, {
   through: {
     model: ProductTag,
     unique: false
   },
 }),
+
 // Tags belongToMany Products (through ProductTag)
 Tag.belongsToMany(Product, {
   through: {
     model: ProductTag,
-    unique: false
+    foreignKey: 'tag_id',
   },
 });
 
