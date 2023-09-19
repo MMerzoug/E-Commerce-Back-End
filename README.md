@@ -7,19 +7,34 @@ This API provides endpoints for creating, reading, updating, and deleting produc
   - [Built With](#built-with)
 - [Getting Started](#getting-started)
   - [Installation](#installation)
+- [Models](#models)
+- [Routes](#routes)
 - [Usage](#usage)
-- [Tests](#tests)
-- [Contribution](#contribution)
+- [Examples](#examples)
+- [Best Code Practices](#best-code-practices)
+- [Tech Stack](#tech-stack)
+- [Walkthrough Video](#walkthrough-video)
+- [Contributing](#contributing)
+- [Acknowledgements](#acknowledgements)
 - [Contact](#contact)
 - [License](#license)
-- [Acknowledgements](#acknowledgements)
 
 ## About the Project
+E-Commerce-Back-End is a robust backend system designed to handle e-commerce operations. From product categorization to management of individual product tags, this API covers a wide range of functionalities essential for any e-commerce platform.
+
 ### Built With
+- Node.js
+- Express.js
+- Sequelize ORM
+- MySQL
 
 ## Getting Started
-### Installation
+To get a local copy up and running, follow these simple steps:
 
+### Installation
+1. Clone the repository to your local machine.
+2. Navigate to the project directory.
+3. Run `npm install` to install the necessary packages.
 
 ## Models
 Category: A category of products.
@@ -85,8 +100,6 @@ DELETE /api/products/1
 
 The response to a successful request would be a JSON object that contains an empty body.
 
-## Tests
-You can run tests using the following command:
 
 ## Best Code Practices
 This application adheres to the following code standards:
@@ -97,7 +110,19 @@ This application was made with the following technologies:
 ## Walkthrough Video
 A walkthrough video demonstrating the functionality of the application can be found at the following link:
 
-[Walkthrough Video]()
+[Walkthrough Video](https://watch.screencastify.com/v/Q5jOMjnAfLZOJOTLvAri)
+
+## Contributing
+Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
+
+## Acknowledgements
+
+I'd like to thank the following people and projects for their contributions:
+
+- **[BCS Code Files](https://github.com/Bucky24/class_temp_repo.git)**: The codebase leverages these fantastic open-source projects to deliver some features.
+- **Vinnie Lopez**: For his code insights and documentation improvements.
+- **Donna Casas Silvas**: For her support and insights around insomnia.
+
 ## Contact
 If you have any questions, feel free to reach out to me!
 
